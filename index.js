@@ -65,7 +65,7 @@ for (const copyBtn of allCopyBtns) {
         const getHotlineNumber = copyBtn.parentNode.parentNode;
         const finalHotlineNumber = getHotlineNumber.querySelector('.hotline-number').innerText;
         navigator.clipboard.writeText(finalHotlineNumber);
-        alert(finalHotlineNumber + " copied");
+        alert("The Number " + finalHotlineNumber + " copied");
         let copyCountDisplay = Number(document.getElementById('copy-count-display').innerText);
         copyCountDisplay++;
         document.getElementById('copy-count-display').innerText = copyCountDisplay;
